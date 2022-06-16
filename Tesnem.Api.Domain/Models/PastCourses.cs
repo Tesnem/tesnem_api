@@ -12,6 +12,6 @@ namespace Tesnem.Api.Domain.Models
         [Key]
         public Guid Id { get; set; }
         public Guid CourseId { get; set; }
-        public List<Student> StudentsWhoCompleted { get; set; }
+        public List<Student> StudentsWhoCompleted { get; set; } = new List<Student>();
     }
 }
